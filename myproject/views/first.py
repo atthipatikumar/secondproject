@@ -31,7 +31,6 @@ def users123(request):
 	response = {"metadata":metadata,'data_test':final_test_map} 
 	data = json.dumps(response, encoding="ISO-8859-1")    
 	http_response = HttpResponse(data,content_type="application/json")
-	print http_response
 	return http_response
 	
 def users999(request):
